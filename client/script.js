@@ -14,9 +14,9 @@ function login() {
     if (data.sucesso) {
 
 // novo código
-      document.getElementById('nome-loja').value = data.loja; // Define o nome da loja no campo oculto
-      localStorage.setItem('loja', data.loja); // Armazena o nome da loja no localStorage
-//
+//      document.getElementById('nome-loja').value = data.loja; // Define o nome da loja no campo oculto
+//      localStorage.setItem('loja', data.loja); // Armazena o nome da loja no localStorage
+// fim do novo código
       
       // Redirecionar para a página de registro de vendas
       window.location.href = 'registro_vendas.html';
