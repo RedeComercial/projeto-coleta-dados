@@ -45,3 +45,29 @@ function registrarVenda() {
     formulario.reset(); // Limpar o formulário após o registro
   });
 }
+
+function carregarVendas() {
+  fetch('/vendas/listar') // Nova rota no servidor
+    .then(response => response.json())
+    .then(vendas => {
+      const tabelaVendas = document.getElementById('tabela-vendas').getElementsByTagName('tbody')[0];
+      tabelaVendas.innerHTML = ''; // Limpa a tabela antes de adicionar as novas vendas
+
+      vendas.forEach(venda => {
+        const linha = tabelaVendas.insertRow();
+        const celulaData = linha.insertCell();
+        const celulaCliente = linha.insertCell();
+        const celulaTipo = linha.insertCell();
+        const celulaValor = linha.insertCell();
+        const celulaPagamento = linha.insertCell();
+        const celulaEntrega = linha.insertCell();
+
+        celulaData.textContent = venda.data;
+        celulaCliente.textContent = venda.cliente;
+        celulaTipo.textContent = venda.tipoAparelho;
+        celulaValor.textContent = venda.valorAparelho;
+        celulaPagamento.textContent = venda.dataPagamento;
+        celulaEntrega.textContent = venda.dataEntrega;
+      });
+    });
+}
