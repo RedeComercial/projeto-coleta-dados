@@ -56,6 +56,10 @@ function registrarVenda() {
 }
 
 function carregarVendas() {
+  // novo código
+  const nomeLoja = document.getElementById('nome-loja').value || localStorage.getItem('loja');
+  //
+  
   fetch('/vendas/listar') // Nova rota no servidor
     .then(response => response.json())
     .then(vendas => {
