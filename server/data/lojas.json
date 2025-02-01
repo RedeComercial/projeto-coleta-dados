@@ -1,1 +1,22 @@
-
+[
+  {
+    "nome": "VDC",
+    "senha": "1234"
+  },
+  {
+    "nome": "BRA",
+    "senha": "1234"
+  },
+  {
+    "nome": "VNG",
+    "senha": "1234"
+  },
+  {
+    "nome": "CBR",
+    "senha": "1234"
+  },
+  {
+    "nome": "PBL",
+    "senha": "1234"
+  }
+]
