@@ -12,6 +12,12 @@ function login() {
   .then(response => response.json())
   .then(data => {
     if (data.sucesso) {
+
+// novo código
+      document.getElementById('nome-loja').value = data.loja; // Define o nome da loja no campo oculto
+      localStorage.setItem('loja', data.loja); // Armazena o nome da loja no localStorage
+//
+      
       // Redirecionar para a página de registro de vendas
       window.location.href = 'registro_vendas.html';
     } else {
