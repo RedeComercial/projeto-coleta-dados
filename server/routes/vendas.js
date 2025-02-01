@@ -7,7 +7,10 @@ const vendasFilePath = path.join(__dirname, '../data/vendas.json');
 
 router.post('/registrar', (req, res) => {
   const venda = req.body;
+  const nomeLoja = req.body.loja; // Recupere o nome da loja
 
+  venda.loja = nomeLoja; // Adicione o campo loja ao objeto venda
+  
   fs.readFile(vendasFilePath, 'utf8', (err, data) => {
     if (err) {
       console.error(err);
@@ -38,6 +41,14 @@ router.get('/listar', (req, res) => {
       return res.status(500).json({ mensagem: 'Erro ao ler dados das vendas' });
     }
 
+// novo código
+    const vendas = JSON.parse(data);
+    const vendasDaLoja = vendas.filter(venda => venda.loja === nomeLoja); // Filtra as vendas
+
+    res.json(vendasDaLoja);
+// Fim do novo código
+
+    
     try {
       const vendas = JSON.parse(data);
       res.json(vendas);
