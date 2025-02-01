@@ -71,3 +71,6 @@ function carregarVendas() {
       });
     });
 }
+
+// Chama a função carregarVendas quando a página carregar
+window.onload = carregarVendas;
