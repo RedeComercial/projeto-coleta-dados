@@ -1,6 +1,6 @@
 [
   {
-    "loja": "BRA", // Adicionamos o nome da loja
+    "loja": "BRA", 
     "data": "2024-07-20",
     "cliente": "João Silva",
     "tipoAparelho": "REal 3",
@@ -9,7 +9,7 @@
     "dataEntrega": "2024-07-28"
   },
   {
-    "loja": "BRA", // Adicionamos o nome da loja
+    "loja": "BRA", 
     "data": "2024-07-21",
     "cliente": "Maria Souza",
     "tipoAparelho": "Real 1",
@@ -18,7 +18,7 @@
     "dataEntrega": "2024-07-29"
   }
   {
-    "loja": "BRA", // Adicionamos o nome da loja
+    "loja": "BRA", 
     "data": "2024-07-21",
     "cliente": "Manuel",
     "tipoAparelho": "Intent 47",
@@ -28,7 +28,7 @@
   }
 
     {
-    "loja": "VDC", // Adicionamos o nome da loja
+    "loja": "VDC", 
     "data": "2024-07-20",
     "cliente": "jaquelina",
     "tipoAparelho": "REal 3",
@@ -37,7 +37,7 @@
     "dataEntrega": "2024-07-28"
   },
   {
-    "loja": "VDC", // Adicionamos o nome da loja
+    "loja": "VDC", 
     "data": "2024-07-21",
     "cliente": "Espingardina",
     "tipoAparelho": "Real 1",
