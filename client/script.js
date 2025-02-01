@@ -38,8 +38,8 @@ function registrarVenda() {
     dataEntrega: formulario['data-entrega'].value
   };
 // novo código
-  const nomeLoja = document.getElementById('nome-loja').value || localStorage.getItem('loja');
-  dadosVenda.loja = nomeLoja;
+//  const nomeLoja = document.getElementById('nome-loja').value || localStorage.getItem('loja');
+//  dadosVenda.loja = nomeLoja;
 //
   fetch('/vendas/registrar', {
     method: 'POST',
@@ -56,9 +56,9 @@ function registrarVenda() {
 }
 
 function carregarVendas() {
-  // novo código
-  const nomeLoja = document.getElementById('nome-loja').value || localStorage.getItem('loja');
-  //
+// novo código
+//  const nomeLoja = document.getElementById('nome-loja').value || localStorage.getItem('loja');
+//
   
   fetch('/vendas/listar') // Nova rota no servidor
     .then(response => response.json())
