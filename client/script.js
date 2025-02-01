@@ -37,7 +37,10 @@ function registrarVenda() {
     dataPagamento: formulario['data-pagamento'].value,
     dataEntrega: formulario['data-entrega'].value
   };
-
+// novo código
+  const nomeLoja = document.getElementById('nome-loja').value || localStorage.getItem('loja');
+  dadosVenda.loja = nomeLoja;
+//
   fetch('/vendas/registrar', {
     method: 'POST',
     headers: {
