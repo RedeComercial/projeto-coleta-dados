@@ -13,6 +13,7 @@ function login() {
   .then(data => {
     if (data.sucesso) {
       // Redirecionar para a página de registro de vendas
+      window.location.href = 'registro_vendas.html';
     } else {
       document.getElementById('mensagem-login').textContent = data.mensagem;
     }
