@@ -1,1 +1,48 @@
-[]
+[
+  {
+    "loja": "BRA", // Adicionamos o nome da loja
+    "data": "2024-07-20",
+    "cliente": "João Silva",
+    "tipoAparelho": "REal 3",
+    "valorAparelho": 1500,
+    "dataPagamento": "2024-07-25",
+    "dataEntrega": "2024-07-28"
+  },
+  {
+    "loja": "BRA", // Adicionamos o nome da loja
+    "data": "2024-07-21",
+    "cliente": "Maria Souza",
+    "tipoAparelho": "Real 1",
+    "valorAparelho": 3000,
+    "dataPagamento": "2024-07-26",
+    "dataEntrega": "2024-07-29"
+  }
+  {
+    "loja": "BRA", // Adicionamos o nome da loja
+    "data": "2024-07-21",
+    "cliente": "Manuel",
+    "tipoAparelho": "Intent 47",
+    "valorAparelho": 5000,
+    "dataPagamento": "2024-07-27",
+    "dataEntrega": "2024-07-30"
+  }
+
+    {
+    "loja": "VDC", // Adicionamos o nome da loja
+    "data": "2024-07-20",
+    "cliente": "jaquelina",
+    "tipoAparelho": "REal 3",
+    "valorAparelho": 1500,
+    "dataPagamento": "2024-07-25",
+    "dataEntrega": "2024-07-28"
+  },
+  {
+    "loja": "VDC", // Adicionamos o nome da loja
+    "data": "2024-07-21",
+    "cliente": "Espingardina",
+    "tipoAparelho": "Real 1",
+    "valorAparelho": 3000,
+    "dataPagamento": "2024-07-26",
+    "dataEntrega": "2024-07-29"
+  }
+]
